@@ -1,7 +1,8 @@
 declare global {
     namespace NodeJS {
         interface ProcessEnv {
-            NAME?: string;
+            ETH_HTTP_URL: string;
+            ETH_WS_URL: string;
             NODE_ENV: 'development' | 'production';
         }
     }
